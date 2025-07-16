@@ -1,0 +1,301 @@
+.carousel-image {
+    width: max-content;
+    height: 100%;
+    max-height: 360px;
+}
+
+.n {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    /* Sombra por defecto */
+}
+
+.navbar-nav .nav-item .nav-link {
+    position: relative;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+}
+
+.navbar-nav .nav-item .nav-link:after {
+    content: "";
+    position: absolute;
+    background-color: #74ad74;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: width 0.3s;
+}
+
+.navbar-nav .nav-item .nav-link:hover:after {
+    width: 100%;
+}
+
+.line {
+    height: 4px !important;
+    background-color: black;
+    border: none;
+}
+
+.move-card {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.move-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    -webkit-transform: translateY(-15px);
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -o-transform: translateY(-15px);
+}
+
+hr.line {
+    width: 50%;
+    border-top: 2px solid #000;
+    margin: 0;
+}
+
+.diagrama {
+    border: 1px solid rgb(88, 87, 86);
+    margin: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    /* Opcional: para bordes redondeados */
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+    /* Ajusta los valores para controlar el difuminado */
+}
+
+.logi {
+    background-image: url(../img/logos/lema2.png);
+    height: 80% !important;
+    width: 80% !important;
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    background-position: center;
+    /* Centra la imagen en el elemento */
+    background-size: cover;
+    /* Ajusta la imagen para cubrir el elemento */
+}
+
+.logi:hover {
+    background-image: url(../img/logos/eslogan.png);
+    height: 80% !important;
+    width: 80% !important;
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    background-position: center;
+    /* Centra la imagen en el elemento */
+    background-size: cover;
+    /* Ajusta la imagen para cubrir el elemento */
+}
+
+.contenedor-logo {
+    width: 250px;
+    height: 105px;
+    padding-bottom: 10px;
+    margin-left: -150px !important;
+    /* Asegúrate de que no haya margen a la derecha */
+}
+
+.navbar {
+    padding-left: 0;
+    /* Elimina cualquier padding que pueda estar empujando los elementos hacia la derecha */
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+
+@media (max-width: 1500px) {
+
+    .logi {
+        background-image: url(../img/logos/lema2.png);
+        height: 100% !important;
+        width: 100% !important;
+        background-repeat: no-repeat;
+        /* Evita que la imagen se repita */
+        background-position: center;
+        /* Centra la imagen en el elemento */
+        background-size: cover;
+        /* Ajusta la imagen para cubrir el elemento */
+    }
+
+    .logi:hover {
+        background-image: url(../img/logos/eslogan.png);
+        height: 100% !important;
+        width: 100% !important;
+        background-repeat: no-repeat;
+        /* Evita que la imagen se repita */
+        background-position: center;
+        /* Centra la imagen en el elemento */
+        background-size: cover;
+        /* Ajusta la imagen para cubrir el elemento */
+    }
+
+    .contenedor-logo {
+        width: 250px;
+        height: 105px;
+        padding-bottom: 10px;
+        margin-left: 0px !important;
+        /* Asegúrate de que no haya margen a la derecha */
+    }
+
+    .navbar {
+        padding-left: 0;
+        /* Elimina cualquier padding que pueda estar empujando los elementos hacia la derecha */
+    }
+
+    .navbar-nav {
+        margin-left: auto;
+        /* Esto empuja los elementos de navegación hacia la derecha */
+    }
+}
+
+
+@media (max-width: 990px) {
+    .logi {
+        display: none;
+        /* Oculta el logo cuando la pantalla tiene un ancho mínimo de 900px */
+    }
+
+    .contenedor-logo {
+        display: none;
+        /* También puedes ocultar el contenedor del logo si es necesario */
+    }
+
+    .navbar {
+        padding-left: 0;
+        /* Ajusta el padding del navbar si es necesario */
+    }
+
+    .navbar-nav {
+        margin-left: auto;
+        /* Ajusta el margen izquierdo de los elementos de navegación si es necesario */
+    }
+}
+
+.a {
+    border-bottom: 3px solid #74ad74;
+    margin: 5px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.buttons {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.containerr {
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+
+}
+
+
+
+.btnfos {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 45px;
+    max-width: 160px;
+    margin: 0 auto 2em;
+    position: relative;
+    text-transform: uppercase;
+    /* vertical-align: middle; */
+    width: 100%;
+}
+
+@media (min-width: 400px) {
+    .btnfos {
+        display: inline-block;
+        margin-right: 2.5em;
+    }
+
+    .btnfos:nth-of-type(even) {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 600px) {
+    .btnfos:nth-of-type(even) {
+        margin-right: 2.5em;
+    }
+
+    .btnfos:nth-of-type(5) {
+        margin-right: 0;
+    }
+}
+
+.btnfos-1 {
+    background: #74ad74;
+    font-weight: 100;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.btnfos-1 svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 45px;
+}
+
+.btnfos-1 rect {
+    fill: none;
+    stroke: #74ad74;
+    stroke-width: 1;
+    stroke-dasharray: 422, 0;
+}
+
+.btnfos-1:hover {
+    background: rgba(210, 43, 37, 0);
+    letter-spacing: 1px;
+    font-weight: 900;
+    color: #74ad74;
+}
+
+.btnfos-1:hover rect {
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+
+}

@@ -1,0 +1,283 @@
+.product-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    justify-content: center;
+}
+
+.main-image-container {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+    overflow: hidden;
+    width: 600px; /* Ajusta el tamaño del contenedor de la imagen principal */
+    height: auto;
+}
+
+.main-image-container img {
+    width: 100%;
+    transition: transform 0.3s ease;
+    transform-origin: center center; /* Punto de transformación en el centro */
+}
+
+.main-image-container:hover img {
+    transform: scale(1.5); /* Ajusta el nivel de zoom según sea necesario */
+}
+
+.thumbnail-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.thumbnail-gallery img {
+    width: 143px; /* Ajusta el tamaño de las miniaturas */
+    height: auto;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s;
+}
+
+.thumbnail-gallery img:hover {
+    border: 2px solid #000;
+}
+
+
+
+
+/* Media query para pantallas de tamaño lg y menores (Bootstrap lg breakpoint: 992px) */
+@media (max-width: 1400px) and (min-width: 401px) {
+    .col-lg-6 {
+        width: 100%;
+    }
+
+    .textoo {
+        margin-top: 50px;
+        margin-right: 50%;
+        border: solid rgba(255, 255, 255, 0.749);
+        background-color: aliceblue;
+    }
+
+    .text-startH1 {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .product-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 25px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 625px) {
+    .col-lg-6 {
+        width: 100%;
+    }
+
+    .textoo {
+        margin-top: 50px;
+        margin-right: 50%;
+        border: solid rgba(255, 255, 255, 0.749);
+        background-color: aliceblue;
+    }
+
+    .text-startH1 {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .main-image-container {
+
+        position: relative;
+        
+        text-align: center;
+        margin-bottom: 20px;
+        overflow: hidden;
+        width: 400px; /* Ajusta el tamaño del contenedor de la imagen principal */
+        height: auto;
+    }
+
+    .main-image-container img {
+        width: 100%;
+        transition: transform 0.3s ease;
+        transform-origin: center center; /* Punto de transformación en el centro */
+    }
+
+    .main-image-container:hover img {
+        transform: scale(1.5); /* Ajusta el nivel de zoom según sea necesario */
+    }
+
+    .thumbnail-gallery {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .thumbnail-gallery img {
+        width: 100px; /* Ajusta el tamaño de las miniaturas */
+        height: auto;
+        cursor: pointer;
+        border: 2px solid transparent;
+        transition: border 0.3s;
+    }
+}
+
+
+
+
+@media (max-width: 450px) {
+    .col-lg-6 {
+        width: 100%;
+    }
+
+    .textoo {
+        margin-top: 50px;
+        margin-right: 50%;
+        border: solid rgba(255, 255, 255, 0.749);
+        background-color: aliceblue;
+    }
+
+    .text-startH1 {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .main-image-container {
+
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 20px;
+        overflow: hidden;
+        width: 225px; /* Ajusta el tamaño del contenedor de la imagen principal */
+        height: auto;
+    }
+
+    .main-image-container img {
+        width: 100%;
+        justify-content: center;
+        transition: transform 0.3s ease;
+        transform-origin: center center; /* Punto de transformación en el centro */
+    }
+
+    .main-image-container:hover img {
+        transform: scale(1.5); /* Ajusta el nivel de zoom según sea necesario */
+    }
+
+    .thumbnail-gallery {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .thumbnail-gallery img {
+        width: 50px; /* Ajusta el tamaño de las miniaturas */
+        height: auto;
+        cursor: pointer;
+        border: 2px solid transparent;
+        transition: border 0.3s;
+    }
+}
+
+
+
+
+
+@media (max-width: 200px) {
+    .col-lg-6 {
+        width: 100%;
+    }
+
+    .textoo {
+        margin-top: 50px;
+        margin-right: 50%;
+        border: solid rgba(255, 255, 255, 0.749);
+        background-color: aliceblue;
+    }
+
+    .text-startH1 {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .main-image-container {
+
+        position: relative;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 20px;
+        overflow: hidden;
+        width: 150px; /* Ajusta el tamaño del contenedor de la imagen principal */
+        height: auto;
+    }
+
+    .main-image-container img {
+        width: 100%;
+        justify-content: center;
+        transition: transform 0.3s ease;
+        transform-origin: center center; /* Punto de transformación en el centro */
+    }
+
+    .main-image-container:hover img {
+        transform: scale(1.5); /* Ajusta el nivel de zoom según sea necesario */
+    }
+
+    .thumbnail-gallery {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .thumbnail-gallery img {
+        width: 20px; /* Ajusta el tamaño de las miniaturas */
+        height: auto;
+        cursor: pointer;
+        border: 2px solid transparent;
+        transition: border 0.3s;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .thumbnail-gallery img {
+        width: 75px;
+        height: 75px;
+        .product-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+    }
+
+}
+
+.custom-breadcrumb .breadcrumb-item a {
+    color: green;
+    
+}
+
+
+.main-image-container {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.thumbnail-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.thumbnail-gallery img {
+    
+    height: 100px;
+    width: 148px; /* Ajusta el tamaño de las miniaturas */
+    object-fit: cover;
+    cursor: pointer;
+}
